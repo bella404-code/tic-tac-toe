@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <div class="logo"><span>X</span><span>O</span></div>
+      <p class="eyebrow">A LITTLE GAME FOR TWO</p>
+      <h1>Tic-Tac-Toe</h1>
+      <p class="subtitle">Pick a square. Make your move.</p>
+    </header>
+
+    <section class="panel">
+      <div class="top">
+        <label>Player X
+          <input id="nameX" value="Player 1" maxlength="16">
+        </label>
+        <label>Player O
+          <input id="nameO" value="Player 2" maxlength="16">
+        </label>
+      </div>
+
+      <p id="status">Player 1's turn</p>
+      <div class="board">
+        <button class="cell" aria-label="Top left"></button>
+        <button class="cell" aria-label="Top middle"></button>
+        <button class="cell" aria-label="Top right"></button>
+        <button class="cell" aria-label="Middle left"></button>
+        <button class="cell" aria-label="Center"></button>
+        <button class="cell" aria-label="Middle right"></button>
+        <button class="cell" aria-label="Bottom left"></button>
+        <button class="cell" aria-label="Bottom middle"></button>
+        <button class="cell" aria-label="Bottom right"></button>
+      </div>
+
+      <div class="scores">
+        <p><span id="scoreNameX">Player 1</span><strong id="scoreX">0</strong></p>
+        <p><span>DRAWS</span><strong id="draws">0</strong></p>
+        <p><span id="scoreNameO">Player 2</span><strong id="scoreO">0</strong></p>
+      </div>
+
+      <div class="actions">
+        <button id="newGame">New round</button>
+        <button id="reset">Reset scores</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
